@@ -14,7 +14,7 @@ const projects = [
       imgSrc: "/assets/img/project-quizup-logo-1.png",
       tools: "C++, OpenGL",
       link: "https://github.com/varadbhogayata/QuizUp",
-      date: "2024-07-22" // Older date
+      date: "2024-09-22" // Older date
     },
     {
       title: "YouTube to MP3",
