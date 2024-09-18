@@ -22,7 +22,7 @@ const projects = [
       imgSrc: "/assets/img/project-music-player.png",
       tools: "Python, Web Scraping, Django",
       link: "https://galvanic-music.herokuapp.com/",
-      date: "2024-08-15" // More recent than GIS but older than Skin Cancer Detection
+      date: "2024-09-15" // More recent than GIS but older than Skin Cancer Detection
     }
   ];
   
