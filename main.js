@@ -31,13 +31,13 @@ const projects = [
   
   let currentIndex = 0; // Tracks how many projects are displayed
   
-  // Function to load projects dynamically
-  function loadProjects() {
+  // Function to load all remaining projects dynamically
+  function loadAllProjects() {
     const recentProjects = document.getElementById('recent-projects');
   
-    // Only display the next project in the array
-    if (currentIndex < projects.length) {
-      const project = projects[currentIndex];
+    // Loop through all remaining projects and display them
+    for (let i = currentIndex; i < projects.length; i++) {
+      const project = projects[i];
   
       const projectHTML = `
         <div class="col s12 m6 l4">
@@ -66,19 +66,18 @@ const projects = [
   
       // Append the project HTML to the recent-projects div
       recentProjects.innerHTML += projectHTML;
-  
-      currentIndex++; // Increment the index for the next load
     }
   
-    // Hide "Load More" button if all projects are displayed
-    if (currentIndex >= projects.length) {
-      document.getElementById('load-more').style.display = 'none';
-    }
+    // Update currentIndex to the length of the projects array
+    currentIndex = projects.length;
+  
+    // Hide "Load More" button after displaying all projects
+    document.getElementById('load-more').style.display = 'none';
   }
   
   // Event listener for "Load More" button
-  document.getElementById('load-more').addEventListener('click', loadProjects);
+  document.getElementById('load-more').addEventListener('click', loadAllProjects);
   
   // Load the first project initially
-  loadProjects();
+  loadAllProjects();
   
