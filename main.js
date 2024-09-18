@@ -6,7 +6,7 @@ const projects = [
       imgSrc: "/assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg",
       tools: "Django, PyTorch, CNN",
       link: "https://github.com/varadbhogayata/visual-question-answering",
-      date: "2024-09-10" // YYYY-MM-DD format
+      date: "2024-07-10" // YYYY-MM-DD format
     },
     {
       title: "GIS Mapping System",
